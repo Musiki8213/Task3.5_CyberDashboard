@@ -5,50 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXUS CLOUD SHIELD</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </head>
 <body>
     <h1>Nexus Cloud Shield: System Security Dashboard</h1>
 
   <div id="main-flex">
-    <div id="flex1">
+    <div id="grid">
     <div id="card1">
        <h3>☁️ Cloud Benefits & Risks</h3>
+       <p id="description">Highlights the key advantages and challenges of using cloud infrastructure.</p>
+      <div id="canvas1">
+        <canvas id="card1Metric" width="600" height="300"></canvas>
+        </div> 
     </div>
 
 
     <div id="card2">
-        <h3>Cloud storage</h3>
+        <h3>🔒 Operational Security</h3>
+        <p id="description">Prevents unauthorized access to system resources and sensitive data.</p>
+        <canvas id="card2Metric" width="600" height="300"></canvas>
     </div>
-
 
     <div id="card3">
-        <h3>Operation security</h3>
+        <h3>📦Cloud storage</h3>
+        <p id="description">Cloud storage allows secure, scalable, off-site file hosting with 24/7 access.</p>
+        <canvas id="card3Metric" width="600" height="300"></canvas>
     </div>
 
-</div>
-
-<br><br><br>
-<div id="flex2">
-
     <div id="card4">
-        <h3>Physical security</h3>
+        <h3>🏢 Physical Security</h3>
+        <p id="description">Secures computer systems from physical intrusion or tampering.</p>
     </div>
 
 
     <div id="card5">
-        <h3>Network security</h3>
+        <h3>🌐 Network Security</h3>
+        <p id="description">Protects data and devices across networks using firewalls and encryption.</p>
     </div>
 
 
     <div id="card6">
-        <h3>Planning for failure</h3>
+        <h3>🔁Planning for failure</h3>
+        <p id="description">Outlines preparation steps for system crashes, boot failures, and other issues.</p>
     </div>
 
-    </div>
+    <div id="card7">
+        <h3>📱 Mobile Application Insights</h3>
+    <p id="description">See how people use different mobile apps like games, shopping, and social media.</p>
+   <canvas id="appUsageChart"></canvas>  
+</div>
+
 
     </div>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <div id="myPlot" style="width:100%;max-width:700px"></div>
-<script src="script.js"></script>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
