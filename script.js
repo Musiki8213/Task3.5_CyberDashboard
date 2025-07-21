@@ -1,5 +1,14 @@
-const ctx = document.getElementById('card1Metric').getContext('2d');
+function openSlider(){
+  document.getElementById("sideMenu").style.width = "250px";
+}
 
+function closeSlider() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+
+
+
+const ctx = document.getElementById('card1Metric').getContext('2d');
     const chart1 = new Chart(ctx, {
       type: 'pie', 
       data: {
@@ -17,6 +26,7 @@ const ctx = document.getElementById('card1Metric').getContext('2d');
       },
       options: {
         responsive: true,
+        
         plugins: {
           legend: {
             position: 'right'

@@ -1,79 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NEXUS CLOUD SHIELD</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+
+
+    <!------------------------------------------------------------------------------->
     
-</head>
-<body>
+       <div id="sideMenu" class="side-slider">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSlider()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="#card1">Cloud Benefits & Risks</a>
+    <a href="#card2">Operational Security</a>
+    <a href="#card3">Cloud Storage</a>
+    <a href="#card4">Physical Security</a>
+    <a href="#card5">Network Security</a>
+    <a href="#card6">Planning for Failure</a>
+    <a href="#card7">Mobile app development status</a>
+  </div>
+  <p id="slider" onclick="openSlider()">MORE</p>
+
+
+
+    <!------------------------------------------------------------------------------->
+
     <h1>Nexus Cloud Shield: System Security Dashboard</h1>
 
-  <div id="main-flex">
-    <div id="grid">
-    <div id="card1">
-       <h3>☁️ Cloud Benefits & Risks</h3>
-       <p id="description">Highlights the key advantages and challenges of using cloud infrastructure.</p>
-      <div id="canvas1">
-        <canvas id="card1Metric" width="800" height="300"></canvas>
-        </div> 
+    <div id="main-flex">
+      <div id="grid">
+        <div id="card1">
+          <h3>☁️ Cloud Benefits & Risks</h3>
+          <p id="description">
+            Highlights the key advantages and challenges of using cloud
+            infrastructure.
+          </p>
+          <div id="canvas1">
+            <canvas id="card1Metric"></canvas>
+          </div>
+        </div>
+
+        <div id="card2">
+          <h3>🔒 Operational Security</h3>
+          <p id="description">
+            Prevents unauthorized access to system resources and sensitive data.
+          </p>
+          <canvas id="card2Metric"></canvas>
+        </div>
+
+        <div id="card3">
+          <h3>📦Cloud storage</h3>
+          <p id="description">
+            Cloud storage allows secure, scalable, off-site file hosting with
+            24/7 access.
+          </p>
+          <canvas id="card3Metric"></canvas>
+        </div>
+
+        <div id="card4">
+          <h3>🏢 Physical Security</h3>
+          <p id="description">
+            Secures computer systems from physical intrusion or tampering.
+          </p>
+          <canvas id="card4Metric"></canvas>
+        </div>
+
+        <div id="card5">
+          <h3>🌐 Network Security</h3>
+          <p id="description">
+            Protects data and devices across networks using firewalls and
+            encryption.
+          </p>
+          <canvas id="card5Metric"></canvas>
+        </div>
+
+        <div id="card6">
+          <h3>🔁Planning for failure</h3>
+          <p id="description">
+            Outlines preparation steps for system crashes, boot failures, and
+            other issues.
+          </p>
+          <canvas id="card6Metric"></canvas>
+        </div>
+
+        <div id="card7">
+          <h3>📱 Mobile app development status</h3>
+          <p id="description">
+            See how people use different mobile apps like games, shopping, and
+            social media.
+          </p>
+          <canvas id="card7Metric"></canvas>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <p>&copy; 2025 Nexus Cloud Shield By Musiki</p>
+          <div id="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
 
-
-    <div id="card2">
-        <h3>🔒 Operational Security</h3>
-        <p id="description">Prevents unauthorized access to system resources and sensitive data.</p>
-        <canvas id="card2Metric" width="300" height="300"></canvas>
-    </div>
-
-    <div id="card3">
-        <h3>📦Cloud storage</h3>
-        <p id="description">Cloud storage allows secure, scalable, off-site file hosting with 24/7 access.</p>
-        <canvas id="card3Metric" width="600" height="300"></canvas>
-    </div>
-
-    <div id="card4">
-        <h3>🏢 Physical Security</h3>
-        <p id="description">Secures computer systems from physical intrusion or tampering.</p>
-         <canvas id="card4Metric" width="600" height="300"></canvas>
-    </div>
-
-
-    <div id="card5">
-        <h3>🌐 Network Security</h3>
-        <p id="description">Protects data and devices across networks using firewalls and encryption.</p>
-         <canvas id="card5Metric" width="800" height="200"></canvas>
-    </div>
-
-
-    <div id="card6">
-        <h3>🔁Planning for failure</h3>
-        <p id="description">Outlines preparation steps for system crashes, boot failures, and other issues.</p>
-        <canvas id="card6Metric" width="600" height="300"></canvas>
-    </div>
-
-    <div id="card7">
-        <h3>📱 Mobile app development status</h3>
-    <p id="description">See how people use different mobile apps like games, shopping, and social media.</p>
-     <canvas id="card7Metric" width="800" height="300"></canvas>
- </div>
-
-
-    </div>
-    <footer>
-  <div class="footer-container">
-    <p>&copy; 2025 Nexus Cloud Shield By Musiki</p>
-    <div id="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
